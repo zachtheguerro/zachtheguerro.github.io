@@ -1,0 +1,8 @@
+<head>
+<script>
+  setTimeout(function() {
+      window.close()
+            window.open('http://zachtheguerro.github.io/CC/','Cookie Clicker v. 2.048','width=1500,height=1000'); return false
+  }, 1000);
+</script>
+</head>
