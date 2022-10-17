@@ -1,0 +1,35 @@
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to left, rgb(91, 161, 227), rgb(81, 228, 86));
+}
+ 
+.button {
+  background-color: #ffffff; 
+  border: 1px #00ffd9;
+  color: black;
+  padding: 12px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 1px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.fade {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 1.5s;
+}
+
+.fade:hover {
+  background-color: #788ee3;
+}
+
+.fade:focus,
+.fade:active {
+  background-color: #51e456;
+  transition: none;
+}
