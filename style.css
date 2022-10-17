@@ -19,13 +19,13 @@ body {font-family: "Lato", sans-serif;
 }
 
 .fade {
-  background-color: #DB1F48;
+  background-color: #ffffff;
   color: #fff;
-  transition: background-color 1s;
+  transition: background-color 0.5s;
 }
 
 .fade:hover {
-  background-color: #004369;
+  background-color: #7a73ff;
 }
 
 .fade:focus,
