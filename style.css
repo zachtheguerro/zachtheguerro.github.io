@@ -4,14 +4,16 @@ body {font-family: "Lato", sans-serif;
   background: linear-gradient(to left, rgb(91, 161, 227), rgb(81, 228, 86));
 }
  
-.container{
-  padding: 30px 40px;
-}
- 
-/* Style the tab */
-.tab {
-  float: left;
-  width: 20%;
-  height: 300px;
-  margin-top: -12px;
+.button {
+  background-color: #ffffff; 
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 6px;
 }
