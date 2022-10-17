@@ -30,6 +30,6 @@ body {font-family: "Lato", sans-serif;
 
 .fade:focus,
 .fade:active {
-  background-color: rgb(91, 161, 227);
+  background-color: #51e456;
   transition: none;
 }
