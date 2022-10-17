@@ -17,3 +17,19 @@ body {font-family: "Lato", sans-serif;
   cursor: pointer;
   border-radius: 6px;
 }
+
+.fade {
+  background-color: #DB1F48;
+  color: #fff;
+  transition: background-color 1s;
+}
+
+.fade:hover {
+  background-color: #004369;
+}
+
+.fade:focus,
+.fade:active {
+  background-color: black;
+  transition: none;
+}
