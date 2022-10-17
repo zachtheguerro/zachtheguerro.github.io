@@ -12,8 +12,8 @@ body {font-family: "Lato", sans-serif;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 12px;
+  margin: 3px 1px;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -21,11 +21,11 @@ body {font-family: "Lato", sans-serif;
 .fade {
   background-color: #ffffff;
   color: #000000;
-  transition: background-color 0.5s;
+  transition: background-color 2s;
 }
 
 .fade:hover {
-  background-color: #7a73ff;
+  background-color: #788ce3;
 }
 
 .fade:focus,
