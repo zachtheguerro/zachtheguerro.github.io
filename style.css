@@ -21,7 +21,7 @@ body {font-family: "Lato", sans-serif;
 .fade {
   background-color: #ffffff;
   color: #000000;
-  transition: background-color 2s;
+  transition: background-color 1.5s;
 }
 
 .fade:hover {
