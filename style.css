@@ -15,7 +15,7 @@ body {font-family: "Lato", sans-serif;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 
 .fade {
@@ -30,6 +30,6 @@ body {font-family: "Lato", sans-serif;
 
 .fade:focus,
 .fade:active {
-  background-color: red;
+  background-color: rgb(91, 161, 227);
   transition: none;
 }
