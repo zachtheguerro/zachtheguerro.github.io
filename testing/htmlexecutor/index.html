@@ -21,5 +21,23 @@
         }
   </script>
   
-  <input type="button" onclick="jsxProcess(codeInputForm.cssxInputText.value);" value="Execute" style="width: 100px;" class="css-Button" />
+                                              <form name="codeInputForm" id="codeInputForm" method="post" action="javascript:void(null);">
+                                                <table summary="" border="0" cellspacing="0" cellpadding="2">
+                                                    <tr>
+                                                        <td width="80">Input code <span class="css-ContactFormRequired">*</span>:</td>
+                                                        <td> </td>
+                                                        <td><textarea name="cssxInputText" id="cssxInputText" cols="60" rows="10"></textarea></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" valign="top"><span class="css-ContactFormRequired">* = required</span></td>
+                                                        <td>
+                                                            <input type="button" onclick="jsxProcess(codeInputForm.cssxInputText.value);" value="Execute" style="width: 100px;" class="css-Button" />
+                                                               
+                                                            <input type="button" name="cssxReset" value="Clear" class="css-Button" style="width: 100px;" onclick="jsxClearInputCode()" /><br />
+                                                            <div id="css-Message"></div>
+                                                        </td>
+                                                    </tr>
+ 
+                                                </table>
+                                            </form>
   
