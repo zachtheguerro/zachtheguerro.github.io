@@ -1,0 +1,29 @@
+<html><head><base target="_blank"> 
+ 
+ <title>AgarioLite</title> 
+ <script src="https://sites.google.com/site/24gv465dc54/jquery-latest.min.js"></script> 
+
+ <script src="https://sites.google.com/site/24gv465dc54/etc.js"></script> 
+ <script src="https://sites.google.com/site/24gv465dc54/circle-game.js"></script> 
+ <script type="text/javascript">
+  $(document).ready(function() {
+    if(isCanvasSupported())
+      cg.init()
+    else
+      $(document.body).html("<style type='text/css'>p {text-align: center} body {padding: 10px}</style><p>You browser does not support HTML5, which is required to run this game.</p><p>I recommend Google Chrome <br /><a href='http://www.google.com/chrome'><img src='' /></a></p>")
+  })
+</script> 
+ <style type="text/css">
+body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  background-color: black;
+}
+</style> 
+  
+</head> 
+ <body>
+<canvas width="815" height="675" style="cursor: default;"></canvas>
+</body></html>
