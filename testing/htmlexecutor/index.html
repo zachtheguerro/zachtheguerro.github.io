@@ -14,11 +14,23 @@
         }
  
         function jsxProcess(input) {
+            if (input != null && trimString(input) == "") {
+                document.getElementById('css-Message').innerHTML = "<br >* Please enter Javascript or HTML code.";
+            } else {
                 popImg = window.open("", "demo", "toolbar=yes,scrollbars=yes,resizable=yes,width=600,height=500");
-                var htmlStr = ''
+                var htmlStr = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n' +
+                    '"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n' +
+                    '<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">\n' +
+                    '<head>\n' +
+                    '<title>Javascript and HTML code executor output<\/title><\/head>\n' +
+                    '<body>\n' +
+                    input +
+                    '<\/body>\n' +
+                    '<\/html>';
                 popImg.document.open();
                 popImg.document.write(htmlStr);
                 popImg.document.close();
+            }
         }
         //]]>	
     </script>
@@ -72,7 +84,7 @@
  
 </head>
 
-                <div id="content">
+ <div id="content">
                     <table summary="" border="0" cellspacing="0" cellpadding="0" align="center" class="css-Table628px">
  
                         <!-- Menu option -->
@@ -165,26 +177,3 @@
                     <iframe id="iframecomments" src="../../services/comments/comments.php" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="overflow:visible; width:100%; display:none"></iframe>
  
                 </div><!-- end content -->
- 
-            </div><!-- end main -->
- 
-            <div id="sidebar">
- 
-                <div id="sidebar-ads">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- RHS_160x600_ADUNIT -->
-                    <ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-0337924350061493" data-ad-slot="8872066935"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
- 
-                </div>
- 
-                <div id="sidebar-poll">
-                    <iframe id="iframepoll" src="../../services/poll/poll.php" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="overflow:visible; width:100%; display:none"><a href="../../customer/tmp/poll/poll.html">Poll</a></iframe>
-                </div>
-            </div>
- 
- 
- 
-        </div><!-- end canvas -->
