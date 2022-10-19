@@ -1,6 +1,10 @@
-<html>
-  <script>
-            function jsxProcess(input) {
+
+       function jsxClearInputCode() {
+            document.codeInputForm.cssxInputText.value = "";
+            document.getElementById('css-Message').innerHTML = "";
+        }
+ 
+        function jsxProcess(input) {
             if (input != null && trimString(input) == "") {
                 document.getElementById('css-Message').innerHTML = "<br >* Please enter Javascript or HTML code.";
             } else {
@@ -19,7 +23,56 @@
                 popImg.document.close();
             }
         }
-  </script>
+        //]]>	
+    </script>
+ 
+    <meta name="author" content="Robert Lie" />
+    <meta name="copyright" content="copyright 2002 - 2021 Mobilefish.com" />
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.0,user-scalable=yes" />-->
+    <!-- Nodig voor verificatie voor www.google.com/webmasters/sitemaps  -->
+    <meta name="verify-v1" content="1SrSUV2xKNbkaV1i8sx0TOMtUIG8NWqifvEO1u+4PNQ=" />
+    <meta name="robots" content="index,follow,noodp,noydir" />
+    <meta name="geo.position" content="52.4518; 4.8119" />
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" language="JavaScript" src="../../scripts/javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../styles/style_ie.css" />
+ 
+ 
+    <!-- EU Cookie law, requested by Google and created by: https://cookieconsent.insites.com/download/ -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#000"
+                    },
+                    "button": {
+                        "background": "#f1d600"
+                    }
+                },
+                "content": {
+                    "message": "We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information you’ve provided to them or they’ve collected from your use of their services.",
+                    "link": "Find out more",
+                    "href": "https://www.mobilefish.com/legal/privacy/privacy.html"
+                }
+            })
+        });
+    </script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+ 
+    <!-- Google automatic ad -->
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-0337924350061493",
+            enable_page_level_ads: true
+        });
+    </script>
+ 
+ 
   
                                               <form name="codeInputForm" id="codeInputForm" method="post" action="javascript:void(null);">
                                                 <table summary="" border="0" cellspacing="0" cellpadding="2">
