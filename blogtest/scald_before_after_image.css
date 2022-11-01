@@ -1,9 +1,0 @@
-.dnd-library-wrapper .editor-item .meta.type-custom {
-    background-image: url('icons/before_after_image-gray.png');
-}
-.scald-menu .add-buttons .add-before_after_image {
-    background: url('icons/before_after_image.png') 50% 50% no-repeat;
-}
-.scald-menu .add-buttons .add-before_after_image:hover {
-    background-image: url('icons/before_after_image-blue.png');
-}

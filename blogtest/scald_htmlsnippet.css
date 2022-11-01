@@ -1,9 +1,0 @@
-.dnd-library-wrapper .editor-item .meta.type-custom {
-    background-image: url('icons/htmlsnippet-gray.png');
-}
-.scald-menu .add-buttons .add-htmlsnippet {
-    background: url('icons/htmlsnippet.png') 50% 50% no-repeat;
-}
-.scald-menu .add-buttons .add-htmlsnippet:hover {
-    background-image: url('icons/htmlsnippet-blue.png');
-}
