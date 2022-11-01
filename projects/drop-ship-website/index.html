@@ -17,6 +17,7 @@ width: 100%;
 height: 75px;
 background-color: #ffffff;
 border-radius: 8px;
+align-items:center;
 }
 
 .homeimgbox {
@@ -44,11 +45,12 @@ border-radius: 8px;
 
   #searchbar{
      padding:15px;
-     border-radius: 10px;
+text-align: center;
+margin: 10px 303px;
    }
  
    input[type=text] {
-      width: 30%;
+      width: 50%;
       -webkit-transition: width 0.15s ease-in-out;
       transition: width 0.15s ease-in-out;
    }
@@ -56,7 +58,7 @@ border-radius: 8px;
    /* When the input field gets focus,
         change its width to 100% */
    input[type=text]:focus {
-     width: 85%;
+     width: 50%;
    }
  
   #list{
@@ -77,9 +79,13 @@ background-color: #d2d4d2;
 margin: 10px;
 }
 
+.items:hover {
+transform: scale(1.05);
+transition: 0.25s;
+}
 
 .btntext{
-background-color: #7a7d7b;
+background-color: #CDCDCD;
 border-radius: 0px 0px 8px 8px;
 position: absolute;
 bottom: 0;
@@ -88,6 +94,46 @@ width: 250px;
 display: inline-block;
 text-align: center;
 color: #000000;
+font-size: 22px;
+font-family:Helvetica;
+}
+
+.btntextprice{
+height: 75px;
+width: 250px;
+display: inline-block;
+color: #000000;
+position: absolute;
+bottom: -40px;
+left: 20px;
+font-size: 16px;
+color: #05CA00;
+}
+
+.btntextinstock{
+height: 75px;
+width: 250px;
+display: inline-block;
+color: #000000;
+position: absolute;
+bottom: -40px;
+left: 170px;
+font-size: 16px;
+color: #0DE500;
+font-weight: bold;
+}
+
+.btntextoutofstock{
+height: 75px;
+width: 250px;
+display: inline-block;
+color: #000000;
+position: absolute;
+bottom: -40px;
+left: 170px;
+font-size: 16px;
+color: #FF0000;
+font-weight: bold;
 }
 
 .itemimg {
@@ -120,16 +166,23 @@ function search_items() {
 <body class="background">
 <div class="topbar">
     <img src="https://zachtheguerro.github.io/projects/drop-ship-website/images/dropzonelogo.jpg"  alt="Image"/> 
+</div>
     <input id="searchbar" onkeyup="search_items()" type="text"
-        name="search" placeholder="Search Items..">
-</div>
-      
+        name="search" placeholder="Search Items..">      
+
     <ol id='list'>
+
 <a href="https://zachtheguerro.github.io/projects/drop-ship-website/"
 <div class="items">
 <div class="btntext">
 item name
   </div>
+<div class="btntextprice">
+0.00$
+</div>
+<div class="btntextinstock"><!-- btntextinstock | btntextoutofstock -->
+In Stock
+</div>
     <img class="itemimg" src="https://zachtheguerro.github.io/projects/drop-ship-website/images/sportswear.jpg"  alt="Image"/><!-- All the images are height: 173; and width: 250; -->
 </div>
 </a>
@@ -139,25 +192,12 @@ item name
 <div class="btntext">
 item name
   </div>
-    <img class="itemimg" src="https://zachtheguerro.github.io/projects/drop-ship-website/images/sportswear.jpg"  alt="Image"/><!-- All the images are height: 173; and width: 250; -->
+<div class="btntextprice">
+0.00$
 </div>
-</a>
-
-
-<a href="https://zachtheguerro.github.io/projects/drop-ship-website/"
-<div class="items">
-<div class="btntext">
-item name
-  </div>
-    <img class="itemimg" src="https://zachtheguerro.github.io/projects/drop-ship-website/images/sportswear.jpg"  alt="Image"/><!-- All the images are height: 173; and width: 250; -->
+<div class="btntextinstock"><!-- btntextinstock | btntextoutofstock -->
+In Stock
 </div>
-</a>
-
-<a href="https://zachtheguerro.github.io/projects/drop-ship-website/"
-<div class="items">
-<div class="btntext">
-item name
-  </div>
     <img class="itemimg" src="https://zachtheguerro.github.io/projects/drop-ship-website/images/sportswear.jpg"  alt="Image"/><!-- All the images are height: 173; and width: 250; -->
 </div>
 </a>
@@ -167,6 +207,12 @@ item name
 <div class="btntext">
 item name
   </div>
+<div class="btntextprice">
+0.00$
+</div>
+<div class="btntextinstock"><!-- btntextinstock | btntextoutofstock -->
+In Stock
+</div>
     <img class="itemimg" src="https://zachtheguerro.github.io/projects/drop-ship-website/images/sportswear.jpg"  alt="Image"/><!-- All the images are height: 173; and width: 250; -->
 </div>
 </a>
@@ -176,6 +222,12 @@ item name
 <div class="btntext">
 item name
   </div>
+<div class="btntextprice">
+0.00$
+</div>
+<div class="btntextinstock"><!-- btntextinstock | btntextoutofstock -->
+In Stock
+</div>
     <img class="itemimg" src="https://zachtheguerro.github.io/projects/drop-ship-website/images/sportswear.jpg"  alt="Image"/><!-- All the images are height: 173; and width: 250; -->
 </div>
 </a>
