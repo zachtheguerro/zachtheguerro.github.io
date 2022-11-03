@@ -46,19 +46,19 @@ align-items:center;
   #searchbar{
      padding:15px;
 text-align: center;
-margin: 10px 303px;
+width:97.50%;
    }
- 
+
+
    input[type=text] {
-      width: 50%;
       -webkit-transition: width 0.15s ease-in-out;
-      transition: width 0.15s ease-in-out;
+      transition: 0.15s ease-in-out;
    }
  
    /* When the input field gets focus,
         change its width to 100% */
    input[type=text]:focus {
-     width: 50%;
+     width: 97.50%;
    }
  
   #list{
@@ -85,7 +85,7 @@ transition: 0.25s;
 
 .btntext{
 background-color: #CDCDCD;
-border-radius: 0px 0px 8px 8px;
+border-radius: 0px 0px 0px 0px;
 position: absolute;
 bottom: 0;
 height: 75px;
@@ -168,7 +168,6 @@ function search_items() {
 </div>
     <input id="searchbar" onkeyup="search_items()" type="text"
         name="search" placeholder="Search Items..">      
-
     <ol id='list'>
 
 <a href="https://zachtheguerro.github.io/projects/drop-ship-website/"
