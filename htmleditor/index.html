@@ -9,6 +9,11 @@
         //<![CDATA[
      
         function jsxClearInputCode() {
+            document.codeInputForm.cssxInputText.value = "Babel, put in between headers <script src="polyfill.min.js"></script> <script src="babel.min.js"></script>" s in html: <script type="text/javascript" language="JavaScript">JsCode</script> css in html: <style>cssCode</style> button that calls function: <button onclick="function()">text;</button> ";
+            document.getElementById('css-Message').innerHTML = "Babel, put in between headers <script src="polyfill.min.js"></script> <script src="babel.min.js"></script>" s in html: <script type="text/javascript" language="JavaScript">JsCode</script> css in html: <style>cssCode</style> button that calls function: <button onclick="function()">text;</button> ";
+        }
+     
+        function jsxExample() {
             document.codeInputForm.cssxInputText.value = "";
             document.getElementById('css-Message').innerHTML = "";
         }
@@ -74,7 +79,7 @@
                                                     <tr>
                                                         <td colspan="2" valign="top"><span class="css-ContactFormRequired">* = required</span></td>
                                                         <td>
-                                                            <input type="button" name="example" value="Example" class="css-Button" style="width: 100px;" onclick="cssxInputText.value = Babel, put in between headers <script src="polyfill.min.js"></script> <script src="babel.min.js"></script>" s in html: <script type="text/javascript" language="JavaScript">JsCode</script> css in html: <style>cssCode</style> button that calls function: <button onclick="function()">text;</button> /><br />
+                                                            <input type="button" name="cssxReset" value="Clear" class="css-Button" style="width: 100px;" onclick="jsxExample()" /><br />
                                                             
                                                             <input type="button" onclick="jsxProcess(codeInputForm.cssxInputText.value);" value="Execute" style="width: 100px;" class="css-Button" />
                                                                                                                         
