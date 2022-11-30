@@ -12,11 +12,6 @@
             document.codeInputForm.cssxInputText.value = "";
             document.getElementById('css-Message').innerHTML = "";
         }
-     
-        function jsxExample() {
-            document.codeInputForm.cssxInputText.value = "<!--Babel: <script src="polyfill.min.js"></script> Babel: <script src="babel.min.js"></script> | js: < script type = "text/javascript" language = "JavaScript" > JsCode < /script> | css: <style>cssCode</style > | button that calls functions: <button onclick="function()" >text</button>-->";
-            document.getElementById('css-Message').innerHTML = "<!--Babel: <script src="polyfill.min.js"></script> Babel: <script src="babel.min.js"></script> | js: < script type = "text/javascript" language = "JavaScript" > JsCode < /script> | css: <style>cssCode</style > | button that calls functions: <button onclick="function()" >text</button>-->";
-        }
  
         function jsxProcess(input) {
             if (input != null && trimString(input) == "") {
@@ -68,6 +63,8 @@
                                         <td class="css-TableDataInform">
  
                                             <h2 class="css-SectionTitle">Enter Javascript or HTML code:</h2>
+                                            <br>
+                                            <h2 class = css-SectionTitle>Babel: <script src="polyfill.min.js"></script> Babel: <script src="babel.min.js"></script> | js: < script type = "text/javascript" language = "JavaScript" > JsCode < /script> | css: <style>cssCode</style > | button that calls functions: <button onclick="function()" >text</button></h2>
                                             <br />
                                             <form name="codeInputForm" id="codeInputForm" method="post" action="javascript:void(null);">
                                                 <table summary="" border="0" cellspacing="0" cellpadding="2">
