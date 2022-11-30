@@ -20,7 +20,7 @@
  
         function jsxProcess(input) {
             if (input != null && trimString(input) == "") {
-                document.getElementById('css-Message').innerHTML = "<br >* Please enter Javascript or HTML code.";
+                document.getElementById('css-Message').innerHTML = "<br >Please enter Javascript or HTML code.";
             } else {
                 popImg = window.open("", "demo", "toolbar=yes,scrollbars=yes,resizable=yes,width=600,height=500");
                 var htmlStr = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n' +
@@ -72,12 +72,11 @@
                                             <form name="codeInputForm" id="codeInputForm" method="post" action="javascript:void(null);">
                                                 <table summary="" border="0" cellspacing="0" cellpadding="2">
                                                     <tr>
-                                                        <td width="80">Input code <span class="css-ContactFormRequired">*</span>:</td>
+                                                        <td width="80">Input code <span class="css-ContactFormRequired"></span>:</td>
                                                         <td> </td>
                                                         <td><textarea name="cssxInputText" id="cssxInputText" cols="60" rows="10"></textarea></td>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="2" valign="top"><span class="css-ContactFormRequired">* = required</span></td>
                                                         <td>
                                                             <input type="button" name="cssxReset" value="Clear" class="css-Button" style="width: 100px;" onclick="jsxExample()" /><br />
                                                             
@@ -111,7 +110,7 @@
         </div>
         <!--<div class="css-ClearBoth"></div>-->
     </div><!-- end container -->
- js in html: &lt;script type="text/javascript" language="JavaScript"&gt;JsCode&lt;/script&gt; <br> css in html: &lt;style&gt;cssCode&lt;/style&gt; <br> button that calls function: &lt;button onclick="function()"&gt;text;&lt;/button&gt;
+ <!--js in html: &lt;script type="text/javascript" language="JavaScript"&gt;JsCode&lt;/script&gt; <br> css in html: &lt;style&gt;cssCode&lt;/style&gt; <br> button that calls function: &lt;button onclick="function()"&gt;text;&lt;/button&gt;-->
 </body>
  
 </html>
